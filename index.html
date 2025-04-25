@@ -1,128 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
-    <title>LogIn</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>LogIn</title>
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-image: url("background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
 
+    .header {
+      background-color: black;
+      width: 100%;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
+    .Banner {
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .log  {
+      background-color: white;
+      width: 90%;
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 15px;
+      border: solid black 1px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .text1 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .username,
+    .password {
+      width: 100%;
+      max-width: 300px;
+      height: 40px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      padding: 0 10px;
+    }
+
+    .login {
+      width: 60%;
+      max-width: 150px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    @media (max-width: 480px) {
+      .Banner {
+        font-size: 1rem;
+      }
+
+      .log {
+        margin: 60px auto;
+        padding: 15px;
+      }
+
+      .logo2,
+      .text1 {
+        font-size: 1rem;
+      }
+
+      .login {
+        width: 80%;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <div class ="header">
-        <p class = "Banner "> Trusted Bank in the House</p>
-        <style>
+  <div class="header">
+    <p class="Banner">Trusted Bank in the House</p>
+  </div>
 
-            body{
-                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                background-image: url("background.jpg");
-                background-repeat: no-repeat;
-                background-size: cover; 
-               
-                
+  <div class="log left">
+    <p class="logo2">M Bank</p>
+    <p class="text1">Login now</p>
+    <input type="text" class="username" id="user" placeholder="username" />
+    <input type="password" class="password" id="pass" placeholder="password" />
+    <button class="login" id="log">Login</button>
+  </div>
 
-            }
-           
-            .header{
-                background-color: black;
-                width: 1608px;
-                height: 80px;
-                position: relative;
-                right: 8px;
-                margin-top: -15px;
-    
-            }
-            .Banner{
-                color:white;
-                padding: 25px;
-                
-            }
-
-            </style>
-    </div>
-
-    <div class ="log  left">
-        <p class = "logo2">M Bank</p>
-
-        <p class = "text1">Login now</p>
-
-        <input type="text" class ="username" id = "user"placeholder="username">
-        
-        <input type="password" class = "password" id ="pass" placeholder="password">
-        <br>
-
-        <button class="login" id = "log" >Login</button>
-
-        <style>
-            body{
-                font-family: 'Courier New', Courier, monospace;
-            }
-            .log{
-                position: relative;
-                background-color: white;
-                width: 25%;
-                height: 420px;
-                top:100px;
-                left :560px;
-                margin: auto;
-                border-radius: 15px;
-                border:solid black;
-            }
-            .logo2{
-                position: relative;
-                left: 170px;
-                padding-top:25px;
-                
-
-            }
-
-
-
-            .username ,.password{
-                position: relative;
-                top: 40px;
-                left: 70px;
-                border-radius: 5px;
-                height: 40px;
-                width: 250px;
-                margin-bottom: 40px;
-
-
-            }
-            .login{
-                position: relative;
-                top: 40px;
-                left: 142px;
-                border-radius: 5px;
-                height: 40px;
-                width: 120px;
-                margin-bottom: 40px;
-            }
-            .text1{
-                position: relative;
-                left: 150px;
-                padding-top:25px;
-
-            }
-
-        
-       
-
-        </style>
-            
-
-
-
-    </div>
-<script src="functions.js">
-
-</script>
-
-
-    
-    
-    
+  <script src="functions.js"></script>
 </body>
 </html>
